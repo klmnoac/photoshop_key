@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remote Ctrl+T</title>
+</head>
+<body>
+    <button onclick="openNewTab()">Open New Tab</button>
+
+    <script>
+        function openNewTab() {
+            fetch("http://192.168.1.10:3000/new-tab")
+                .then(response => response.text())
+
+        }
+    </script>
+</body>
+</html>
